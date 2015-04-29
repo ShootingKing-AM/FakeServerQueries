@@ -84,7 +84,7 @@ enum FFlags(<<=1)
    UnSet respective variable flags. You can even pass the bitsum of the above flags
    eg. fq_unset( FL_SVNAME | FL_BOTSNUM );
 
-   Before modifing the information in query responses, Module will be check if the
+   Before modifing the information in query responses, Module will be checking if the
    variable flags are set and if yes, proceeds to substitute the respective variables into the response.
    
    returns 0 on Success and -1 on Failure
