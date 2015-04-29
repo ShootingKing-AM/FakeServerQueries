@@ -12,7 +12,7 @@ MM_ROOT = ../sdk/metamod/metamod
 ### EDIT BELOW FOR OTHER PROJECTS ###
 #####################################
 
-PROJECT = fake_queries
+PROJECT = fakequeries
 
 OBJECTS = sdk/amxxmodule.cpp main.cpp SendInfoBase.cpp natives.cpp
 
@@ -41,12 +41,12 @@ OS := $(shell uname -s)
 ifeq "$(OS)" "Darwin"
 	CPP = $(CPP_OSX)
 	LIB_EXT = dylib
-	LIB_SUFFIX = _mm
+	LIB_SUFFIX = _amxx
 	CFLAGS += -DOSX
 	LINK += -dynamiclib -lstdc++ -mmacosx-version-min=10.5
 else
 	LIB_EXT = so
-	LIB_SUFFIX = _mm_i386
+	LIB_SUFFIX = _amxx_i386
 	CFLAGS += -DLINUX
 	LINK += -shared
 endif
