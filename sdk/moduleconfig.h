@@ -5,11 +5,11 @@
 
 // Module info
 #define MODULE_NAME "Fake Queries"
-#define MODULE_VERSION "1.0"
+#define MODULE_VERSION "1.1"
 #define MODULE_AUTHOR "Shooting King"
 #define MODULE_URL ""
 #define MODULE_LOGTAG "FQ"
-#define MODULE_LIBRARY "fakequeries"
+#define MODULE_LIBRARY "fake_queries"
 #define MODULE_LIBCLASS ""
 // If you want the module not to be reloaded on mapchange, remove / comment out the next line
 #define MODULE_RELOAD_ON_MAPCHANGE

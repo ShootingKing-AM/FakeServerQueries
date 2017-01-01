@@ -108,6 +108,11 @@ size_t PASCAL OnNewSendto( int socket, const void* message, size_t length, int f
 				 Message.SetCurrentByte( g_SendInfo->GetInfoInt(FL_MAXPLAYERS) );
 			else
 				 Message.CopyCurrentByte();
+			
+			if( g_SendInfo->GetFlags() & FL_BOTSNUM )
+				 Message.SetCurrentByte( g_SendInfo->GetInfoInt(FL_BOTSNUM) );
+			else
+				 Message.CopyCurrentByte();
 
 			Message.CopyDataTillPos();  //Copy rest all data in OrigMessage as it is
 			

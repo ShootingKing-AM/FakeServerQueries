@@ -5,14 +5,14 @@
 ### EDIT THESE PATHS FOR YOUR OWN SETUP ###
 ###########################################
 
-HLSDK   = ../sdk/hlsdk/
-MM_ROOT = ../sdk/metamod/metamod
+HLSDK   = ../amxsdk/hlsdk/
+MM_ROOT = ../amxsdk/metamod/metamod
 
 #####################################
 ### EDIT BELOW FOR OTHER PROJECTS ###
 #####################################
 
-PROJECT = fakequeries
+PROJECT = fake_queries
 
 OBJECTS = sdk/amxxmodule.cpp main.cpp SendInfoBase.cpp natives.cpp
 
@@ -41,7 +41,7 @@ OS := $(shell uname -s)
 ifeq "$(OS)" "Darwin"
 	CPP = $(CPP_OSX)
 	LIB_EXT = dylib
-	LIB_SUFFIX = _amxx
+	LIB_SUFFIX = _mm
 	CFLAGS += -DOSX
 	LINK += -dynamiclib -lstdc++ -mmacosx-version-min=10.5
 else
